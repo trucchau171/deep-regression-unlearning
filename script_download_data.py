@@ -29,7 +29,7 @@ import os
 import shutil
 import sys
 
-from expt_settings.configs import ExperimentConfig
+from configs import ExperimentConfig
 import numpy as np
 import pandas as pd
 import pyunpack
