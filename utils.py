@@ -5,7 +5,8 @@ from torch import nn
 import pandas as pd
 from torch.utils.data import DataLoader
 from torch.nn import functional as F
-from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 
