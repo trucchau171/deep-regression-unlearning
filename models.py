@@ -617,7 +617,8 @@ class LSTMnetwork(nn.Module):
         
         
         output = self.linear3(output)
+        actv5 = output
         output = self.relu(output)
         output = self.linear4(output)
         
-        return torch.squeeze(output), actv1, actv2, actv3, actv4
+        return torch.squeeze(output), actv1, actv2, actv3, actv4, actv5
